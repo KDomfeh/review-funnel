@@ -147,7 +147,7 @@ INDEX_HTML = """<!DOCTYPE html>
 <body>
 <div class="card" id="step1">
   <img src="/static/logo.jpg" class="logo" alt="The Foreman Agency"/>
-  <h1>Would you be willing to recommend us?</h1>
+  <h1>We love ratings! Please give us one!</h1>
   <p class="muted">Tap a star to rate your experience</p>
   <div class="stars" id="stars"></div>
 </div>
@@ -173,7 +173,7 @@ INDEX_HTML = """<!DOCTYPE html>
   <div style="text-align:left">
     <label>Who helped you? (optional)</label>
     <input id="agentNameLow" placeholder="Agent name"/>
-    <label>What could we do better?</label>
+    <label>We love great feedback. How did we do?</label>
     <textarea id="feedback" rows="4" placeholder="Your private feedback"></textarea>
     <button class="btn" onclick="submitLow()">Send private feedback</button>
   </div>
