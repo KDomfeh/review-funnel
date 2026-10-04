@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: review-funnel
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: GOOGLE_REVIEW_URL
+        value: https://search.google.com/local/writereview?placeid=ChIJyfP0lbUN9YgRhx_1kkVHBJU
+      - key: ALERT_EMAIL
+        value: Kd@arcadianpartners.org
+      - key: OWNER_EMAIL
+        value: Kd@arcadianpartners.org
+      - key: SECRET_KEY
+        generateValue: true
